@@ -1,0 +1,223 @@
+*{box-sizing: border-box;}
+
+body 
+{
+	font-size:14px;
+	background-color:#E9ECF1;
+}
+
+/* -=-=-=-=-=- PAGE LINK STYLING -=-=-=-=-=- */
+a:link 
+{
+	color: #CC0000;
+	font-family: Arial;
+	text-decoration: none;
+}
+a:visited {
+	color: #000000;
+}
+a:hover {
+	color: 	#FF9900;
+}
+a:active {
+	color: 	#FFCC99;
+}
+
+
+#ContentOutterArea
+{
+	border:0px solid red;
+	width:900px;
+	height:auto;
+	margin-left:auto;
+	margin-right:auto;
+	background-color: none;
+}
+
+
+/* -=-=-=-=-=- PAGE HEADING -=-=-=-=-=- */
+.pageHeading
+{
+	margin-left:auto;
+	margin-right:auto;
+	border-radius: 0px 70px 0px 10px;
+	border: 0px solid red;
+	width:900px;
+	text-align: center;
+	text-shadow: 0px 1px 1px rgba(0,0,0,0.5);
+	/* GRADIENT BACKGRAOUND */
+background: -moz-linear-gradient(left,  rgba(117,126,133,1) 0%, rgba(14,14,14,0.03) 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(117,126,133,1)), color-stop(100%,rgba(14,14,14,0.03))); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(left,  rgba(117,126,133,1) 0%,rgba(14,14,14,0.03) 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(left,  rgba(117,126,133,1) 0%,rgba(14,14,14,0.03) 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(left,  rgba(117,126,133,1) 0%,rgba(14,14,14,0.03) 100%); /* IE10+ */
+background: linear-gradient(to right,  rgba(117,126,133,1) 0%,rgba(14,14,14,0.03) 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#757e85', endColorstr='#080e0e0e',GradientType=1 ); /* IE6-9 */
+
+}
+.pageTitle
+{
+	padding:3px;
+	color: #ffffff;
+	font-family:Century Gothic;
+	font-size:18px;
+	font-weight:900;
+}
+
+
+/* -=-=-=-=-=- PAGE TAB LINK STYLING -=-=-=-=-=- */
+.PageLink
+{
+	margin-left:auto;
+	margin-right:auto;
+	border-radius: 0px 0px 0px 10px;
+	border: 0px solid red;
+	width:900px;
+	font-size:16px;
+	font-weight: initial;
+	overflow:hidden;
+	background: #a90329;
+	
+	/* IE9 SVG, needs conditional override of 'filter' to 'none' */
+	background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2E5MDMyOSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjQ0JSIgc3RvcC1jb2xvcj0iIzhmMDIyMiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiM2ZDAwMTkiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+	background: -moz-linear-gradient(top,  #a90329 0%, #8f0222 44%, #6d0019 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#a90329), color-stop(44%,#8f0222), color-stop(100%,#6d0019)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #a90329 0%,#8f0222 44%,#6d0019 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #a90329 0%,#8f0222 44%,#6d0019 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #a90329 0%,#8f0222 44%,#6d0019 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #a90329 0%,#8f0222 44%,#6d0019 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a90329', endColorstr='#6d0019',GradientType=0 ); /* IE6-8 */
+}
+.PageLink ul
+{
+	display: block;    
+}
+.PageLink ul li
+{
+	display:inline;
+	margin-right: 10px;
+	margin-left: 10px;
+}
+.PageLink ul li a
+{
+	color: white;
+  transition: color 0.5s ease;
+}
+.PageLink ul li a:hover
+{
+	color: #FF9933;
+	text-shadow: 0px 1px 1px black;
+}
+
+.SurveyDIV
+{
+	border-radius: 5px;
+	border:0px solid red;
+	width: 900px;
+	margin-left:auto;
+	margin-right:auto;
+	margin-bottom: 50px;
+	background-color: white;
+	box-shadow: 0px 2px 2px rgba(0,0,0,0.3);
+}
+.TD
+{
+	padding:20px 20px 20px 20px;
+	border:solid 0px #0099FF;
+	width:900px;
+}
+
+textarea
+{
+	border:0px solid #000000;
+	border-radius: 5px;
+	box-shadow:inset 0px 0px 2px #000000;
+	padding: 5px;
+	width:400px;
+	height:100px;
+	resize: none;
+}
+
+.selectorMenu
+{
+	border-radius:5px;
+	border: 0px solid white;
+	margin-left:10px;
+	padding:5px;
+	background:white;
+	box-shadow:inset 0px 0px 2px #000000;
+}
+/* -=-=-=-=-=- PAGE INPUT FIELD STYLING -=-=-=-=-=- */
+.InputFieldShort
+{
+	border:0px solid #000000;
+	border-radius: 5px;
+	box-shadow:inset 0px 0px 2px #000000;
+	padding: 5px;
+	width:50px;
+}
+.InputFieldMid
+{
+	border:0px solid #000000;
+	border-radius: 5px;
+	box-shadow:inset 0px 0px 2px #000000;
+	padding: 5px;
+	width:500px;
+	margin-left: 60px;
+}
+.InputFieldLong
+{
+	border:0px solid #000000;
+	border-radius: 5px;
+	box-shadow:inset 0px 0px 2px #000000;
+	padding: 5px;
+	width:60px;
+}
+
+.InputFieldMid
+{
+	border:0px solid #000000;
+	border-radius: 5px;
+	box-shadow:inset 0px 0px 2px #000000;
+	padding: 5px;
+	width:300px;
+	margin-left: 10px;
+}
+
+/* -=-=-=-=-=- PAGE BOTTON STYLING -=-=-=-=-=- */
+.submitBotton
+{
+	border-radius:5px;
+	border: solid 1px transparent;
+	background-color: skyblue;
+	padding: 5px 10px 5px 10px;
+}
+.submitBotton:hover
+{
+	background: skyblue;
+	box-shadow: 0px 2px 3px rgba(0,0,0,0.3);
+}
+.submitBotton:active
+{
+	background:rgb(249,198,103);
+	box-shadow: inset 0px 0px 7px rgba(0,0,0,0.3);
+}
+
+/* -=-=-=-=-=- RESPONSIVE -=-=-=-=-=- */
+
+@media screen and (max-width: 900px) and (min-width: 600px), (min-width: 1100px) {
+  .PageLink ul li a {
+    font-size: 100px;
+    padding: 10px;
+    border: 4px solid black;    
+   }   
+}
+
+@media screen and (max-width: 900px) and (min-width: 600px), (min-width: 1100px) {
+  form{
+    font-size: 100px;
+    padding: 10px;
+    border: 4px solid black;    
+   }   
+}
+

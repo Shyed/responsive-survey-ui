@@ -1,0 +1,108 @@
+<!doctype html>
+<html>
+    <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+       <title>Waiting List</title>
+        <link rel="stylesheet" href="waiting.css">
+        <script type="text/javascript">
+            
+        function validate() {
+            if (document.myForm.firstname.value == "")
+                {
+                    alert("Please provide your first name!");
+                    document.myForm.firstname.focus();
+                    return false;
+                }
+            
+            if (document.myForm.lastname.value == "")
+                {
+                    alert("Please provide your last name!");
+                    document.myForm.lastname.focus();
+                    return false;
+                }
+            if (document.myForm.EMPID.value == "" ||isNaN(document.myForm.EMPID.value) || (document.myForm.EMPID.value.length !=8))
+                {
+                    alert("Please provide your EmpID only in numeric Format");
+                    document.myForm.EMPID.focus();
+                    return false;
+                }             
+            
+            //EMAIL VALIDATION
+            if(/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(myForm.email.value))
+                {
+                    return (true)
+                }
+                else 
+                {                    
+                    alert("Please provide your email!");
+                    document.myForm.email.focus();
+                    return false;
+                }
+                  
+            return(true);
+        }       
+       
+        
+        </script>
+    </head>
+    <body>
+          <div id="ContentOutterArea">
+        <header class="pageHeading">
+         <div class="pageTitle">
+            <p>DEPARTMENT OF MATHEMATICS, ENGINEERING AND COMPUTER SCIENCE</p>
+        </div>
+        
+        <div class="PageLink">
+            <ul>
+                <li class="pLink"><a href="webpage.php">Web Programming Survey</a></li>
+                <li class="pLink"><a href="hybrid.php">Hybrid Student Survey</a></li>
+                <li class="pLink"><a href="tutoring.php">Tutoring</a></li>
+                <li class="pLink"><a href="survey.php">Tutoring Services Survey</a></li>
+                <li class="pLink"><a href="tutoringlogin.php">Tutor Login</a></li>
+                <li class="pLink"><a href="wainting.php">Waiting List</a></li>
+            </ul>
+          </div>
+         </header>
+        </div>
+        
+        <p align="center"><b>MAC Waiting List</b></p> 
+        <form name="myForm" action="waitingL.php" method="post" onSubmit="return(validate());">
+            <h3><p align="center">&nbsp;</p>
+        <table width="537" border="0" align="center">
+            <tr>
+                <h3><td align="left" ><strong>First Name:</strong></td> </h3>
+                <td align="left" ><input type="text" name="firstname"></td>
+            </tr>
+            <tr>  
+                <h3><td  align="left" valign="top"><strong>Last Name:</strong></td> </h3>
+                <td align="left" ><input type="text" name="lastname"></td>
+            </tr> 
+             <tr>
+                <h3><td align="left" valign="top"><strong>EmpID:</strong></td> </h3>
+                <td align="left" ><input type="text" name="EMPID" maxlength="8"></td>
+             </tr>
+             <tr>
+                <h3><td align="left" valign="top"><strong>E-mail:</strong></td> </h3>
+                <td align="left" ><input type="text" name="email"></td>
+            </tr> 
+             <tr>
+                <h3><td align="left" valign="top"><strong>Select Course:</strong></td> </h3>
+                <td align="left" ><select name="course" id="course">
+                    <option value="empty">-Select-</option>
+                    <option value="mac101">MAC101</option>
+                    <option value="mac108">MAC108</option> 
+                    <option value="mac125">MAC125</option> 
+                    <option value="mac172">MAC172</option> 
+                    <option value="mac271">MAC272</option> 
+                    <option value="mac250">MAC250</option> 
+                    </select>
+                </td>
+            </tr>
+            
+        </table>
+        <p align="center">
+        <input type="submit" value="Submit"></p>
+            </h3>
+        </form>
+      </body>
+</html>
